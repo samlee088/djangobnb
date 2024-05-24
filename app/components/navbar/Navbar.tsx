@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import SearchFilters from "./SearchFilters";
 
 const Navbar = () => {
   return (
@@ -16,8 +17,9 @@ const Navbar = () => {
             />
           </Link>
 
-          <div className="flex space-x-6">Search filter</div>
-
+          <div>
+            <SearchFilters />
+          </div>
           <div className="flex items-center space-x-6">
             Add property - User Nav
           </div>
