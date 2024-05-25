@@ -13,6 +13,15 @@ const PropertyListItem = () => {
           alt="beach house"
         />
       </div>
+
+      <div className="mt-2">
+        <p className="text-lg font-bold ">Property Name</p>
+      </div>
+      <div className="mt-2">
+        <p className="text-sm text-gray-500">
+          <strong>$200</strong> per night
+        </p>
+      </div>
     </div>
   );
 };
