@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import CustomButton from "../forms/CustomButton";
 
@@ -35,7 +37,11 @@ const ConversationDetail = () => {
           className="w-full p-2 bg-gray-200 rounded-xl"
         />
 
-        <CustomButton label="Send" />
+        <CustomButton
+          label="Send"
+          onClick={() => console.log("clicked")}
+          className="w-[100px] text-center"
+        />
       </div>
     </>
   );
