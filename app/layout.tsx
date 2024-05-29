@@ -16,13 +16,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const content = (
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione incidunt
+      aut ut aperiam soluta dolorum ad quas reiciendis vero, amet adipisci
+      obcaecati voluptatibus provident sequi voluptatem. Laudantium sint
+      aspernatur iusto.
+    </p>
+  );
+
   return (
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
         <div className="pt-32">{children}</div>
-
-        <Modal />
       </body>
     </html>
   );
