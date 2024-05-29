@@ -1,11 +1,20 @@
-import React from 'react'
+"use client"
+
+import React from "react";
+import Modal from "./Modal";
+import useLoginModal from "@/app/hooks/useLoginModal";
 
 const LoginModal = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+    const loginModal = useLoginModal()
 
-export default LoginModal
+    const content = (
+        <h2 className='mb-6 text-2xl'>Welcome to Djangobnb, please log in</h2>
+    )
+
+  return (
+    <Modal isOpen={loginModal.isOpen} close = {loginModal.close} label="Log In"
+    content = {content}/>
+  );
+};
+
+export default LoginModal;
