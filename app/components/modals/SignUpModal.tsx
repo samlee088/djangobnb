@@ -2,11 +2,12 @@
 
 import React from "react";
 import Modal from "./Modal";
-import useLoginModal from "@/app/hooks/useLoginModal";
-import CustomButton from "../forms/CustomButton";
 
-const LoginModal = () => {
-  const loginModal = useLoginModal();
+import CustomButton from "../forms/CustomButton";
+import useSignUpModal from "@/app/hooks/useSignUpModal";
+
+const SignUpModal = () => {
+  const signUpModal = useSignUpModal();
 
   const content = (
     <>
@@ -20,9 +21,14 @@ const LoginModal = () => {
         <input
           placeholder="your password"
           type="password"
-          className="w-full h-[54px] px-4 border border-gray-300 rounded-xl"
+          className="w-full h-[54px] px-4 py-4 border border-gray-300 rounded-xl"
         />
-        <div className="p-5 bg-airbnb text-white rounded-xl=opacity-80">
+        <input
+          placeholder="repeat password"
+          type="password"
+          className="w-full h-[54px] px-4 py-4 border border-gray-300 rounded-xl"
+        />
+        <div className="p-5 bg-airbnb text-white rounded-xl opacity-80">
           The Error Message
         </div>
         <CustomButton label="Submit" onClick={() => console.log("test")} />
@@ -32,12 +38,12 @@ const LoginModal = () => {
 
   return (
     <Modal
-      isOpen={loginModal.isOpen}
-      close={loginModal.close}
-      label="Log In"
+      isOpen={signUpModal.isOpen}
+      close={signUpModal.close}
+      label="Sign Up"
       content={content}
     />
   );
 };
 
-export default LoginModal;
+export default SignUpModal;
