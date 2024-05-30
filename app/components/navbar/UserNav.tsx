@@ -46,6 +46,7 @@ const UserNav = () => {
           <MenuLink
             label="Log in"
             onClick={() => {
+              setIsOpen(false);
               loginModal.open();
             }}
           />
