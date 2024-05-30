@@ -1,0 +1,6 @@
+FROM python:3.13.0b1-bookworm
+
+WORKDIR /usr/src/djangobnb_backend
+
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
