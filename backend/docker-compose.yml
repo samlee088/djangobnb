@@ -19,7 +19,7 @@ services:
     environment:
       - POSTGRES_USER=postgresuser
       - POSTGRES_PASSWORD=postgrespassword
-      - POSTGRES_DB=djanobnb
+      - POSTGRES_DB=djangobnb
 
 volumes:
   postgres_data:
